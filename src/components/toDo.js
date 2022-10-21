@@ -24,13 +24,10 @@ function ToDo() {
                         <div className="todo">
                             <div className="left">
                                 <input onChange={(e) => {
-                                    console.log(e.target.checked)
-                                    console.log(obj)
                                     setToDos(toDos.filter(obj2 => {
                                         if (obj2.id === obj.id) {
                                             obj2.status = e.target.checked
                                         }
-                                        console.log(obj2)
                                         return obj2
                                     }))
                                 }} value={obj.status} type="checkbox" name="" id="" />
